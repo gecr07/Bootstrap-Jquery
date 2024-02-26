@@ -179,7 +179,7 @@ $(document).ready(() => {
 ```
 
 
-
+Como conclucion busca los metodos tienen toggle que hacen ambas acciones como mostrar y ocultar.
 
 
 
