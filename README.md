@@ -142,7 +142,20 @@ $('.dropdown-menu').on('mouseleave',() => {
 });
 ```
 
+Puedes usar targets como imagenes.
 
+```
+
+$(document).ready(() => {
+  
+$('.hide-button').on('click', () => {
+$('.first-image').hide()
+  })
+
+
+});
+
+```
 
 
 
