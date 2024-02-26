@@ -156,7 +156,27 @@ $('.first-image').hide()
 });
 
 ```
+## toggle() 
 
+Este metodo permite hacer show y hide osea neesitas  uno solo boton para ambas acciones.
+
+```
+
+$(document).ready(() => {
+  $('.hide-button').on('click', () => {
+    $('.first-image').hide();
+  });
+  
+  $('.show-button').on('click', () => {
+    $('.first-image').show();
+  });
+  
+  $('.toggle-button').on('click', () => {
+    $('.first-image').toggle();
+  });
+  
+});
+```
 
 
 
