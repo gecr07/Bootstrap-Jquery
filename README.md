@@ -351,11 +351,62 @@ $('.postText').focus();
 ![image](https://github.com/gecr07/Bootstrap-Jquery/assets/63270579/2745c01c-9363-47b5-a34a-fc0ba7ccc819)
 
 
+## CSS & jQuery
+
+Para este apartado jquery puede modificar las propiedades de css.
+
+> To modify CSS properties of an element, jQuery provides a method called .css().
+
+![image](https://github.com/gecr07/Bootstrap-Jquery/assets/63270579/15c2c85d-4b56-4e42-9b4c-5df9bc4d544b)
 
 
 
+```
+$(document).ready(() => {
+ 
+  $('.login-button').on('click', () => {
+    $('.login-form').toggle();
+  });
+  
+  $('.menu-button').on('mouseenter', () => {
+    $('.nav-menu').show();
+     $('.menu-button').css('color', '#C3FF00');
+  })
+  
+  $('.nav-menu').on('mouseleave', () => {
+    $('.nav-menu').hide();
+    $('.menu-button').css('color', '#EFEFEF');
+  })
+  
+}); 
+
+```
+
+Incluso se puede pasar en formato clave valor para pasar muchas propiedades para modificar.
 
 
+```
+$(document).ready(() => {
+ 
+  $('.login-button').on('click', () => {
+    $('.login-form').toggle();
+  });
+  
+  $('.menu-button').on('mouseenter', () => {
+    $('.nav-menu').show();
+     $('.menu-button').css({color: '#C3FF00',
+  backgroundColor: '#535353'});
+  })
+  
+  $('.nav-menu').on('mouseleave', () => {
+    $('.nav-menu').hide();
+    $('.menu-button').css({color: '#EFEFEF',
+  backgroundColor: '#303030'});
+  })
+  
+}); 
+
+```
 
 
 
