@@ -32,7 +32,17 @@ DOM manipulation methods:
 
 ```
 
+##  jQuery .ready() method
 
+Este metodo espera a que toda la pagina se cargue debes de poner todo el codigo dentro de esta funcion.
+
+> The jQuery .ready() method waits until the HTML page’s DOM is ready to manipulate. You should wrap all JavaScript behavior inside of the .ready() method. This will make sure the web page is rendered in the browser before any jQuery code executes.
+
+```javascript
+$(document).ready(() => {
+
+});
+```
 
 
 
