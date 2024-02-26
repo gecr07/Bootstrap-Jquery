@@ -45,9 +45,78 @@ $(document).ready(() => {
 ```
 
 
+## jQuery objects
+
+Para crear objetos usamos $() para hacer referencias por tag id o clase. Por ejemplo para apuntar a todos los elementos que pertenescan a la clase ".product-photo" . Hacer esto hace un jquery object.
+
+### Target by class
+
+```
+$(document).ready(() => {
+$('.product-photo').show()
+
+});
+```
+
+### Target by id
+
+```
+$(document).ready(() => {
+  $('#nav-dropdown').hide();
+});
+```
+Las variables para que se puedan diferenciar se le pone $ enfrente
+
+```
+const $jQueryObject = $('.someClass');
+```
+
+>  It is a naming convention that reminds you and lets others know that a given variable is a jQuery object.
+
+## Event Handlers
+
+El metodo de Jquery de on() es el encargado de añadir events handler recibe dos pararametros el nombre del evento por ejemplo el clic y el otro la call back function cuando para cuando el evento se desencadene.
+
+```
+$('#login').on('click', () => {
+  $loginForm.show();
+})
+
+```
+
+Como ejemplo define los objetos jquery y define un event handler para que cuando se hace clic muestre el menu.
+
+```javascript
+$(document).ready(() => {
+  const $menuButton = $('.menu-button');
+  const $navDropdown = $('#nav-dropdown');
+
+$menuButton.on('click', () => {
+ $navDropdown.show()
+})
+
+})
+
+```
 
 
+Ahora para mostrar y quitar cuanod el mouse se mueva
 
+
+```
+$(document).ready(() => {
+  const $menuButton = $('.menu-button');
+  const $navDropdown = $('#nav-dropdown');
+
+  $menuButton.on('click', () => {
+    $navDropdown.show();
+  })
+  
+  $navDropdown.on('mouseleave', () => {
+    $navDropdown.hide();
+  })
+})
+```
 
 
 
