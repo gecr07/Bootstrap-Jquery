@@ -211,7 +211,18 @@ $('.correct-answer').on('click', () => {
 });
 ```
 
+Tengo otro ejemplo que te puede servir esconder todos los elemntos div.
 
+```
+
+$('.hide').on('click', () => {
+  $('div').hide();
+});
+```
+
+## Introduction to Mouse Events
+
+Como siempre ya sabes que los eventos que hacen referencia a elementos html clases ids etc tinen event listener and a callback function. Ahora estos eventos van a hacer cosas cuando el mouse haga algo.
 
 
 
