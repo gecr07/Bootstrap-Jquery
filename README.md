@@ -224,10 +224,62 @@ $('.hide').on('click', () => {
 
 Como siempre ya sabes que los eventos que hacen referencia a elementos html clases ids etc tinen event listener and a callback function. Ahora estos eventos van a hacer cosas cuando el mouse haga algo.
 
+```
+$(document).ready(() => {
+  $('.login-button').on('click', () => {
+    $('.login-form').show();
+  });
+  
+  $('.menu-button').on('mouseenter', () => {
+    $('.nav-menu').show()
+  })
+  
+  $('.nav-menu').on('mouseleave', () => {
+    $('.nav-menu').hide();
+  })
+
+  $('.product-photo').on('mouseenter', () => {
+   $('.product-photo').addClass('photo-active');
+  }).on('mouseleave', () => {
+   $('.product-photo').removeClass('photo-active');
+  })
+  
+})
+```
+
+En el ejemplo anterior se activa cuando pasas el mouse y cuando lo quitas se desactiva el zoom esto lo controlan agregando y eliminando clases.
+
+## currentTarget
+
+Para que cuando tu pases el mouse no todos los elementos se agan zoom es una cosa de this.
 
 
+![image](https://github.com/gecr07/Bootstrap-Jquery/assets/63270579/6841d364-c783-4b31-afc7-4eb2d3d0fe8a)
 
 
+```
+$(document).ready(() => {
+  $('.login-button').on('click', () => {
+    $('.login-form').show();
+  });
+  
+  $('.menu-button').on('mouseenter', () => {
+    $('.nav-menu').show()
+  })
+  
+  $('.nav-menu').on('mouseleave', () => {
+    $('.nav-menu').hide();
+  })
+  
+  $('.product-photo').on('mouseenter', event => {
+    $(event.currentTarget).addClass('photo-active')
+  }).on('mouseleave', event => {
+    $(event.currentTarget).removeClass('photo-active')
+  })
+  
+}); 
+
+```
 
 
 
