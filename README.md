@@ -281,12 +281,74 @@ $(document).ready(() => {
 
 ```
 
+## Manejar texto ( importante para cosas de buscar etc)
+
+Cuando cargas la pagina tienes que dar clic en donde quieres escribir bueno con esta linea al cargar la pagina solita se pone el cursor.
+
+```
+$('.postText').focus();
+```
+
+![image](https://github.com/gecr07/Bootstrap-Jquery/assets/63270579/279aded9-175b-4ffb-abba-1e6c578a545c)
+
+Para este ejercicio se tiene que se usa el focul tambien los caracteres cuando escribes se va actualizando la varibale.
+
+![image](https://github.com/gecr07/Bootstrap-Jquery/assets/63270579/e3f0c617-233b-4413-91ae-62078be69865)
+
+```
+
+$(document).ready(() => {
+
+$('.menu').on('mouseenter', () => {
+
+$('.nav-menu').show();
+
+  })
+
+$('.menu').on('mouseleave', () => {
+
+$('.nav-menu').hide();
+
+  })
+  
+
+  $('.btn').on('mouseenter', event => {
+    $(event.currentTarget).addClass('btn-hover')
+  }).on('mouseleave', event => {
+    $(event.currentTarget).removeClass('btn-hover')
+  })
+
+
+$('.postText').on('keyup', event => {
+let post = $(event.currentTarget).val();
+let remaining = 140 - post.length;
+
+if (remaining <=0) {
+
+$('.wordcount').addClass('red')
+
+}
+else
+{
+$('.wordcount').removeClass('red')
+}
+
+
+$('.characters').html(remaining);
 
 
 
 
+  })
+
+$('.postText').focus();
+
+});
+
+```
 
 
+![image](https://github.com/gecr07/Bootstrap-Jquery/assets/63270579/2745c01c-9363-47b5-a34a-fc0ba7ccc819)
 
 
 
