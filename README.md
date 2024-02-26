@@ -179,7 +179,37 @@ $(document).ready(() => {
 ```
 
 
-Como conclucion busca los metodos tienen toggle que hacen ambas acciones como mostrar y ocultar.
+Como conclucion busca los metodos tienen toggle que hacen ambas acciones como mostrar y ocultar. Aqui tienes un pequeño ejemplo.
+
+```
+$(document).ready(() =>{
+
+$('.hint-box').on('click', () => {
+  $('.hint').slideToggle(500);
+})
+
+
+$('.wrong-answer-one').on('click', () => {
+  $('.wrong-text-one').fadeOut('slow');
+  $('.frown').show();
+})
+
+$('.wrong-answer-two').on('click', () => {
+  $('.wrong-text-two').fadeOut('slow');
+  $('.frown').show();
+})
+
+$('.wrong-answer-three').on('click', () => {
+  $('.wrong-text-three').fadeOut('slow');
+  $('.frown').show();
+})
+
+$('.correct-answer').on('click', () => {
+  $('.frown').hide();
+  $('.smiley').show();
+})
+});
+```
 
 
 
