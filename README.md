@@ -409,7 +409,39 @@ $(document).ready(() => {
 ```
 
 
+Tenemos aqui un ejemplo de como funciona ya todo:
 
+![image](https://github.com/gecr07/Bootstrap-Jquery/assets/63270579/7be90ee0-1988-4064-8327-528785712332)
+
+
+```
+$(document).ready(() => {
+  
+  $('#text').on('keyup', event => {
+  $('.preview').html($(event.currentTarget).val());
+  
+})
+
+$('#font').on('change', event => {
+  $('.preview').css({fontFamily: $(event.currentTarget).val()});
+  
+})
+
+$('#weight').on('change', event => {
+  $('.preview').css({fontWeight: $(event.currentTarget).val()
+  });
+  
+})
+
+$('#size').on('keyup', event => {
+  let fontSize= $(event.currentTarget).val() + 'px';
+  $('.preview').css({ fontSize: fontSize
+  });
+  
+})
+
+})
+```
 
 
 
