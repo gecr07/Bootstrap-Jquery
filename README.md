@@ -462,7 +462,7 @@ Bootstrap is a framework of readily available code that integrates with HTML to 
 En este ejemplo bootstrap se obtiene desde una CDN. Existen algunas otras librerias que se puden agregar para agregar cosas interactivas y estas se agregan despues del <body>. Aqui tienes el link a la documentacion oficial.
 
 
-```htlm
+``` htlm
 <!doctype html>
 <html lang="en">
 
