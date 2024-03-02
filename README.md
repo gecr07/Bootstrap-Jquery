@@ -623,22 +623,121 @@ Y ya si quiere suna vista mas general.
 ![image](https://github.com/gecr07/Bootstrap-Jquery/assets/63270579/5185837d-7f96-4d1f-aa0e-32b9865f3de4)
 
 
+Bootstrap como ya se vio funciona como el CSS Flex(entiendo que es por bloques)
+
+```
+<div class="container">
+  <div class="row">
+  </div>
+</div>
+
+```
+
+![image](https://github.com/gecr07/Bootstrap-Jquery/assets/63270579/5e8d0d60-2c8d-4293-84e3-79d0ef850d0a)
 
 
+Nos ponen ejemplos:
+
+```
+    <div class="container">
+      <!--First row-->
+			<div class="row">
+        <div class="col">
+          <h3>One Column in a row</h3>
+        </div>
+      </div>
+
+      <!--Second row-->
+      <div class="row">
+				<div class="col">
+          <p>Two columns in a row</p>
+        </div>
+				<div class="col">
+          <p>Two columns in a row</p>
+        </div>
+      </div>
+      
+      <!--Third row-->
+			<div class="row">
+				<div class="col">
+          <p>Three columns in a row</p>
+        </div>
+				<div class="col">
+          <p>Three columns in a row</p>
+        </div>
+				<div class="col">
+          <p>Three columns in a row</p>
+        </div>
+      </div>
+    </div>
+```
+
+![image](https://github.com/gecr07/Bootstrap-Jquery/assets/63270579/83396ee3-bcf7-422b-bc2a-3d55e409a363)
+
+Column Widths
+
+Podemos manejar el tamaño de largo de las columans el Widths
+
+```
+
+    <div class="container">
+			<div class="row">
+        <div class="col-9">
+					<p>Differently</p>
+        </div>
+        <div class="col-3">
+          <p>Sized</p>
+        </div>
+      </div>
+
+```
+
+![image](https://github.com/gecr07/Bootstrap-Jquery/assets/63270579/3f9375d1-7858-432f-90ac-d2cc488599c4)
+
+Se puede ajustar dependiendo por ejemplo del texto
+
+```
+<div class="col-auto">
+  <p>This content determines the width of the parent column</p>
+</div>
+
+```
+
+## Bootstrap Breakpoints
+
+Este punto tiene que ver con que bootstrap es responsive.
+
+![image](https://github.com/gecr07/Bootstrap-Jquery/assets/63270579/3008708f-f2c7-4bb5-b3c3-b337b5befc72)
+
+![image](https://github.com/gecr07/Bootstrap-Jquery/assets/63270579/c2c8dc0c-4080-484c-9d7f-b0bee6d8d2f5)
+
+![image](https://github.com/gecr07/Bootstrap-Jquery/assets/63270579/5e896d9f-9518-48cc-bd62-c2da2f4498ba)
 
 
+## Clases
+
+Se pueden poner mas de una clase a los tags para tener mas control.
+
+```
+<div class="col-12 col-md-8">
+</div>
+```
+
+###  BOOTSTRAP 4: UTILITIES AND COMPONENTS
+
+Puedes cambiar el estilo basicamente de todo.
 
 
+```
+  <p class="text-warning">
+    Change the text color in this paragraph to yellow.
+  </p>
 
+```
 
+Tambien puedes usar botones y componentes ya hechos has de cuenta que ya traen todo nada mas copias y pegas el codigo. Checa esta definicion: 
 
-
-
-
-
-
-
-
+> The first component we’ll investigate is the navigation (nav) component which offers our users a collection of links. The nav component is slightly different from a navbar component. The nav component is often specific to one or a few webpages, whereas a navbar often appears on all the pages of a website.
 
 
 
