@@ -770,11 +770,56 @@ Para usar toggle se hace asi es lo mismo que si lo hicieras con Jquery
 
 
 
+## Jumbotron Component
+
+Es como la portada de la pagina siempre revisa la documentacion de bootstrap ahi hay muchos elementos que pueden ser usados para crear una pagina.
+
+```
+
+<div class="jumbotron">
+  <h1>Wow this stands out!</h1>
+</div>
+
+```
+
+Como crear cards que son como cuadros aqui tienes el codigo:
+
+```
+ <div class="card">
+           <img src="https://content.codecademy.com/courses/learn-bootstrap-components/flowers.png" class="card-img-top" >
+           <div class="card-body">
+            <p class="card-text"> May It's almost spring time, get your seeds ready for planting! </p>
+            </div>
+           <div class="card-header">
+          Planting in the spring
+          </div>
+        </div>
+      </div>
+```
+
+## The Carousel Component
+
+Ya sabes el carrusel. Siempre es bueno mriar a la documentacion oficial de bootstrap y ver que se acomoda a tus intereses.
+
+```
 
 
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="example_slide_1.png" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="example_slide_2.png" alt="Second slide">
+    </div>
+  </div>
+</div>
 
+```
 
+Esta es la sintaxis basica de un carrucel
 
+> https://getbootstrap.com/docs/4.2/components/carousel/
 
 
 
