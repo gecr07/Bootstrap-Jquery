@@ -750,6 +750,24 @@ Tambien puedes usar botones y componentes ya hechos has de cuenta que ya traen t
 </ul>
 
 ```
+Para usar botones se hace asi
+
+```
+<button type="button" class="btn btn-danger">Danger</button>
+```
+
+Para usar toggle se hace asi es lo mismo que si lo hicieras con Jquery
+
+```
+<button class="btn btn-link" aria-expanded="false" aria-controls="seedSpecial" data-target="#seedSpecial" data-toggle="collapse">
+          Gearing to Grow?
+        </button>
+        <p class="collapse" id="seedSpecial">
+          Use promo code "GGarden" for additional 15% off your entire purchase!
+        </p>
+
+```
+
 
 
 
