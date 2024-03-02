@@ -739,7 +739,17 @@ Tambien puedes usar botones y componentes ya hechos has de cuenta que ya traen t
 
 > The first component we’ll investigate is the navigation (nav) component which offers our users a collection of links. The nav component is slightly different from a navbar component. The nav component is often specific to one or a few webpages, whereas a navbar often appears on all the pages of a website.
 
+```
+<ul class="nav">
+  <li class="nav-item">
+    <a class="nav-link" href="#">First Link</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Second Link</a>
+  </li>
+</ul>
 
+```
 
 
 
