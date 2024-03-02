@@ -601,6 +601,26 @@ En este ejemplo bootstrap se obtiene desde una CDN. Existen algunas otras librer
 </html>
 ```
 
+### Intro to the Grid
+
+Los contenedores son la base de la cuadrícula de Bootstrap. Dentro de los contenedores, anidamos filas como hijos inmediatos. Luego, las filas interiores anidadas son columnas.
+
+![image](https://github.com/gecr07/Bootstrap-Jquery/assets/63270579/d3ed0a03-9de2-48a7-8af7-aad03dfdac0a)
+
+El codigo para representar esto seria:
+
+```
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <!-- A column inside a row inside a container! -->
+    </div>
+  </div>
+</div>
+```
+Y ya si quiere suna vista mas general.
+
+![image](https://github.com/gecr07/Bootstrap-Jquery/assets/63270579/5185837d-7f96-4d1f-aa0e-32b9865f3de4)
 
 
 
